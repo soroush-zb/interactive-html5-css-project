@@ -1,0 +1,289 @@
+@font-face {
+  font-family: Gruppo;
+  src: url(fonts/english/Gruppo/Gruppo-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: Elham;
+  src: url(fonts/farsi/Elham.ttf) format(truetype);
+}
+@font-face {
+  font-family: Vazir;
+  src: url(fonts/farsi/Vazir.ttf) format(truetype);
+}
+@font-face {
+  font-family: Arapey;
+  src: url(fonts/english/Arapey/Arapey-Regular.ttf) format(truetype);
+}
+/* اعمال های ثابت پروژه */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+p {
+  font-family: "Vazir", tahoma, Arial, sans-serif;
+}
+/* کد بک گراند چند رنگ لینیر گرادینت */
+.Section-one {
+  height: 100vh;
+  background-image: linear-gradient(
+      -165deg,
+      rgba(0, 162, 255, 0.1) 30%,
+      rgba(255, 255, 255, 0.2) 40%,
+      rgba(255, 0, 153, 0.25)
+    ),
+    linear-gradient(
+      125deg,
+      rgb(59, 183, 255) 15%,
+      rgb(59, 232, 255),
+      rgba(255, 255, 255, 1) 38%,
+      rgba(255, 255, 255, 1) 60%,
+      rgba(144, 0, 255, 0.6) 75%,
+      rgba(98, 0, 255, 0.85) 85%,
+      rgb(25, 0, 255)
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  direction: ltr;
+}
+/* هدر دو قسمتی سمت چپ */
+header div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+/* هدر دو قسمتی سمت راست */
+header nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* قسمت سطری شده لیست ها */
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2rem;
+  gap: 2rem;
+}
+header nav li {
+  margin: 1rem;
+}
+/* اعمال بک گراند سبک شیشه به دکمه های هدر */
+header nav li a {
+  background-image: linear-gradient(
+    150deg,
+    rgba(240, 248, 255, 0.5),
+    rgba(0, 0, 0, 0.3)
+  );
+  background-size: 200% 200%;
+  padding: 0.3125rem 1.5625rem;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav li p {
+  font-family: Elham;
+  font-size: 1.5rem;
+}
+header nav a:hover {
+  animation: background-bottom-color 0.5s ease-in-out forwards;
+}
+/* انیمیشن روشن به تاریک سبک شیشه ای */
+@keyframes background-bottom-color {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 0%;
+    color: aliceblue;
+  }
+}
+.hr {
+  background-color: white;
+  height: 0.125rem;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 1rem;
+}
+article {
+  margin-top: 6.5%;
+  margin-right: 4rem;
+}
+article p {
+  width: 60%;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: justify;
+  margin-top: 1.5rem;
+}
+#H-style {
+  position: absolute;
+  left: 19.8rem;
+  top: 27%;
+  font-size: 15rem;
+  font-family: "Arapey", "Times New Roman", Times, serif;
+  font-weight: lighter;
+  background: linear-gradient(
+    to right,
+    #000000,          /* رنگ چپ متن (مشکی) */
+    #000000,
+    #000000 78%,      /* اتمام بخش مشکی */
+    transparent 78%,    /* شروع بخش شفاف (برش) */
+    transparent 81%,    /* پایان بخش شفاف */
+    #000000 81%       /* تا انتها مشکی */
+  );
+  /*  محدود کردن پس‌زمینه به محدوده متن */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* شفاف کردن رنگ خود متن */
+  color: transparent;
+}
+#T-style {
+  position: absolute;
+  left: 21rem;
+  top: 64%;
+  font-size: 15rem;
+  font-family: "Arapey", "Times New Roman", Times, serif;
+  font-weight: lighter;
+  background: linear-gradient(
+    to right,
+    #000000,
+    #000000,
+    #000000 52%,
+    transparent 52%,
+    transparent 56%,
+    #000000 56%
+  );
+  /*  محدود کردن پس‌زمینه به محدوده متن */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* شفاف کردن رنگ خود متن */
+  color: transparent;
+}
+.Section-two {
+  height: 100vh;
+  background-image: linear-gradient(
+      -15deg,
+      rgba(0, 162, 255, 0.1) 30%,
+      rgba(255, 255, 255, 0.2) 40%,
+      rgba(255, 0, 153, 0.25)
+    ),
+    linear-gradient(
+      55deg,
+      rgb(59, 183, 255) 15%,
+      rgb(59, 232, 255),
+      rgba(255, 255, 255, 1) 38%,
+      rgba(255, 255, 255, 1) 60%,
+      rgba(144, 0, 255, 0.6) 75%,
+      rgba(98, 0, 255, 0.85) 85%,
+      rgb(25, 0, 255)
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+.article-Section-two {
+  position: absolute;
+  padding-top: 5rem;
+}
+#M-style {
+  position: absolute;
+  left: 19rem;
+  top: 12%;
+  font-size: 15rem;
+  font-family: "Arapey", "Times New Roman", Times, serif;
+  font-weight: lighter;
+  background: linear-gradient(
+    to right,
+    #000000,
+    #000000,
+    #000000 82%,
+    transparent 82%,
+    transparent 84%,
+    #000000 84%
+  );
+  /*  محدود کردن پس‌زمینه به محدوده متن */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* شفاف کردن رنگ خود متن */
+  color: transparent;
+}
+#L-style {
+  position: absolute;
+  left: 21rem;
+  top: 50%;
+  font-size: 15rem;
+  font-family: "Arapey", "Times New Roman", Times, serif;
+  font-weight: lighter;
+  background: linear-gradient(
+    to right,
+    #000000,
+    #000000,
+    #000000 25%,
+    transparent 25%,
+    transparent 29%,
+    #000000 29%
+  );
+  /*  محدود کردن پس‌زمینه به محدوده متن */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* شفاف کردن رنگ خود متن */
+  color: transparent;
+}
+.bottom-banner {
+  position: absolute;
+  bottom: 7%;
+  overflow: hidden;
+}
+.semantic-tags {
+  display: flex;
+  gap: 3rem;
+  animation: slide 45s linear infinite;
+}
+.semantic-tags li {
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  background-image: linear-gradient(
+    150deg,
+    rgba(240, 248, 255, 0.5),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-60%);
+  }
+}
+.bottom-back{
+  display: block;
+ background-image: linear-gradient(
+    150deg,
+    rgba(240, 248, 255, 0.5),
+    rgba(0, 0, 0, 0.3)
+  );
+  padding: 0.1rem 1.5rem;
+  border-radius: 5px;
+  color: black;
+  position: absolute;
+  right: 90vw;
+  bottom: 15vh;
+}
+.bottom-back:hover {
+  animation: background-bottom-color 0.5s ease-in-out forwards;
+}
