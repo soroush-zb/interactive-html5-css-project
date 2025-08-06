@@ -1,0 +1,36 @@
+/* انیمیشن روشن به تاریک سبک شیشه ای */
+/* A1 */
+@keyframes background-bottom-color {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 0%;
+    color: aliceblue;
+  }
+}
+/* A1 */
+
+/* A2 */
+@keyframes fade-article1-flow {
+  to{
+mask-position: 100%;
+  }
+}
+@keyframes move-article{
+  to{
+    transform: translateX(-12rem);
+  }
+}
+/* A2 */
+
+/* A3 */
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-60%);
+  }
+}
+/* A3 */

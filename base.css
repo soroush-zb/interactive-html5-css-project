@@ -96,19 +96,11 @@ header nav li p {
   font-family: Elham;
   font-size: 1.5rem;
 }
+/* A1 */
 header nav a:hover {
   animation: background-bottom-color 0.5s ease-in-out forwards;
 }
-/* انیمیشن روشن به تاریک سبک شیشه ای */
-@keyframes background-bottom-color {
-  from {
-    background-position: 0% 50%;
-  }
-  to {
-    background-position: 100% 0%;
-    color: aliceblue;
-  }
-}
+/* A1 */
 .hr {
   background-color: white;
   height: 0.125rem;
@@ -117,17 +109,30 @@ header nav a:hover {
   margin: auto;
   margin-top: 1rem;
 }
+
 article {
   margin-top: 6.5%;
-  margin-right: 4rem;
+  margin-right: 1rem;
 }
+/* A2 */
 article p {
+  margin-right: -10rem;
   width: 60%;
   font-size: 1.7rem;
   line-height: 3rem;
   text-align: justify;
   margin-top: 1.5rem;
+  /* شفافیت مقاله از راست به چپ */
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    transparent 100%
+  );
+ mask-size: 300%;
+animation: fade-article1-flow 2s 1.3s linear forwards , move-article 1.3s linear forwards;
 }
+/* A2 */
 #H-style {
   position: absolute;
   left: 19.8rem;
@@ -248,11 +253,13 @@ article p {
   bottom: 7%;
   overflow: hidden;
 }
+/* A3 */
 .semantic-tags {
   display: flex;
   gap: 3rem;
   animation: slide 45s linear infinite;
 }
+/* A3 */
 .semantic-tags li {
   font-size: 1.5rem;
   border-radius: 0.4rem;
@@ -261,14 +268,6 @@ article p {
     rgba(240, 248, 255, 0.5),
     rgba(0, 0, 0, 0.3)
   );
-}
-@keyframes slide {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-60%);
-  }
 }
 .bottom-back{
   display: block;
