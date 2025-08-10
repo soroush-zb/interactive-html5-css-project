@@ -22,6 +22,21 @@
   list-style: none;
   text-decoration: none;
 }
+.logo-name{
+  margin-left: 42vh;
+  font-family: Gruppo;
+  font-size: 2.5rem;
+
+  mask-image: linear-gradient(
+    to left,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+ mask-size: 200%;
+ animation: logo-name-flow 1s 4s linear forwards
+}
 p {
   font-family: "Vazir", tahoma, Arial, sans-serif;
 }
@@ -76,6 +91,8 @@ header nav ul {
 }
 header nav li {
   margin: 1rem;
+  animation: bottom-nav 1.3s 4s linear forwards , opacity 2s 4s linear forwards;
+  opacity: 0;
 }
 /* اعمال بک گراند سبک شیشه به دکمه های هدر */
 header nav li a {
@@ -108,11 +125,15 @@ header nav a:hover {
   border-radius: 10px;
   margin: auto;
   margin-top: 1rem;
+  opacity: 0;
+  animation: opacity 1s 4s linear forwards
 }
 
 article {
   margin-top: 6.5%;
   margin-right: 1rem;
+  opacity: 0;
+  animation: opacity 2s 4s linear forwards;
 }
 /* A2 */
 article p {
@@ -130,7 +151,7 @@ article p {
     transparent 100%
   );
  mask-size: 300%;
-animation: fade-article1-flow 2s 1.3s linear forwards , move-article 1.3s linear forwards;
+animation: fade-article1-flow 4s 4s linear forwards , move-article 1.3s 4s linear forwards;
 }
 /* A2 */
 #H-style {
@@ -154,6 +175,8 @@ animation: fade-article1-flow 2s 1.3s linear forwards , move-article 1.3s linear
   background-clip: text;
   /* شفاف کردن رنگ خود متن */
   color: transparent;
+  opacity: 0;
+  animation: opacity 2s 4s linear forwards;
 }
 #T-style {
   position: absolute;
@@ -176,6 +199,8 @@ animation: fade-article1-flow 2s 1.3s linear forwards , move-article 1.3s linear
   background-clip: text;
   /* شفاف کردن رنگ خود متن */
   color: transparent;
+  opacity: 0;
+  animation: opacity 2s 4s linear forwards;
 }
 .Section-two {
   height: 100vh;
@@ -225,6 +250,8 @@ animation: fade-article1-flow 2s 1.3s linear forwards , move-article 1.3s linear
   background-clip: text;
   /* شفاف کردن رنگ خود متن */
   color: transparent;
+  opacity: 0;
+  animation: opacity 2s 4s linear forwards;
 }
 #L-style {
   position: absolute;
@@ -247,6 +274,8 @@ animation: fade-article1-flow 2s 1.3s linear forwards , move-article 1.3s linear
   background-clip: text;
   /* شفاف کردن رنگ خود متن */
   color: transparent;
+  opacity: 0;
+  animation: opacity 2s 4s linear forwards;
 }
 .bottom-banner {
   position: absolute;
@@ -268,6 +297,8 @@ animation: fade-article1-flow 2s 1.3s linear forwards , move-article 1.3s linear
     rgba(240, 248, 255, 0.5),
     rgba(0, 0, 0, 0.3)
   );
+   opacity: 0;
+   animation: opacity 2s 4s linear forwards;
 }
 .bottom-back{
   display: block;
